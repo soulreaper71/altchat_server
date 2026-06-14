@@ -1,5 +1,4 @@
 import requests
-import ssl
 import urllib3
 import socket
 
@@ -20,7 +19,7 @@ while True:
 	print("received connection from: ", adrr)
 
 	c.send("You are currently connected to altchat messaging service... Thank You for connecting... your".encode())
-	c.send("Your connection was terminated...".decode())
+	c.send("Your connection was terminated...".encode())
 	c.close()
 
 	break
