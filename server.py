@@ -1,7 +1,14 @@
-class message:
+import requests
+import ssl
+import urllib3
+import socket
 
-    def __init__(self, *arg. **kwargs):
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-        self.message_id = message_id
-        self.message = message
-        self.message_length = len(message)
+port = 6767
+
+client.connect(("", port))
+
+
+
+
