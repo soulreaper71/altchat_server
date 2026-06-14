@@ -3,12 +3,25 @@ import ssl
 import urllib3
 import socket
 
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_connection_manager  = socket.socket()
 
 port = 6767
 
-client.connect(("", port))
+server.bind(("",port))
+print("socket binded to %s" %(port))
 
+server.listen(50)
+print("socket is listening")
 
+while true:
 
+	c, addr = server.accept()
 
+	print("received connection from: ", adrr)
+
+	c.send("Thank you for connecting".encode())
+
+	c.close()
+
+	break
+	
