@@ -16,7 +16,7 @@ while True:
 
 	c, addr = server_connection_manager.accept()
 
-	print("received connection from: ", adrr)
+	print("received connection from: ", addr)
 
 	c.send("You are currently connected to altchat messaging service... Thank You for connecting... your".encode())
 	c.send("Your connection was terminated...".encode())
