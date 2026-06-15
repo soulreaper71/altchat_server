@@ -4,8 +4,9 @@ import socket
 
 server_connection_manager  = socket.socket()
 
-port = 6767
+port = 7420
 
+server_connection_manager.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 server_connection_manager.bind(("",port))
 print("socket binded to %s" %(port))
 
