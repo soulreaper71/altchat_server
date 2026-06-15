@@ -2,7 +2,7 @@ import requests
 import urllib3
 import socket
 
-server_connection_manager  = socket.socket()
+server_connection_manager  = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 port = 6971
 
@@ -22,3 +22,4 @@ while True:
 	c.send("You are currently connected to altchat messaging service... Thank You for connecting... your".encode())
 	c.send("Your connection was terminated...".encode())
 	c.close()
+	break
