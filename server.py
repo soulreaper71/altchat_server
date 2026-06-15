@@ -4,7 +4,7 @@ import socket
 
 server_connection_manager  = socket.socket()
 
-port = 7420
+port = 6971
 
 server_connection_manager.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 server_connection_manager.bind(("",port))
