@@ -22,4 +22,4 @@ while True:
 		c.send("You are currently connected to altchat messaging service... Thank You for connecting... your".encode())
 		c.send("Your connection was terminated...".encode())
 		c.close()
-		
+		break		
