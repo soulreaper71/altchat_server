@@ -14,12 +14,12 @@ server_connection_manager.listen(50)
 print("socket is listening")
 
 while True:
-
 	c, addr = server_connection_manager.accept()
-
-	print("received connection from: ", addr)
-
-	c.send("You are currently connected to altchat messaging service... Thank You for connecting... your".encode())
-	c.send("Your connection was terminated...".encode())
-	c.close()
-	break
+	if addr[] == "127.0.0.1":
+		c.close()
+	else:
+		print("received connection from: ", addr)
+		c.send("You are currently connected to altchat messaging service... Thank You for connecting... your".encode())
+		c.send("Your connection was terminated...".encode())
+		c.close()
+		
