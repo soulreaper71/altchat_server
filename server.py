@@ -15,7 +15,7 @@ print("socket is listening")
 
 while True:
 	c, addr = server_connection_manager.accept()
-	if addr[] == "127.0.0.1":
+	if addr == "127.0.0.1":
 		c.close()
 	else:
 		print("received connection from: ", addr)
