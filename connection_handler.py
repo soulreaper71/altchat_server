@@ -14,5 +14,5 @@ class connection_handler:
 		
 		while 1: 
 			client,addr = tcp_socket.accept()
-			client.send("Hello. Brave Traveller.", )
-			client.send("We will terminate this connection now.")
+			client.send("Hello. Brave Traveller.".encode() )
+			client.send("We will terminate this connection now.".encode())
