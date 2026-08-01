@@ -5,10 +5,11 @@ class connection_handler:
 	tcp_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
 	def __init__(self):
+		pass
 
 	def connect():
-
-		tcp_socket.bind('',4443)
+		
+		tcp_socket.bind('',443)
 		tcp_socket.listen(7000)
 		
 		while 1: 
