@@ -2,7 +2,7 @@ import socket
 import threading
 
 client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-client.connect(('0.tcp.in.ngrok.io', 29893))
+client.connect(('0.0.0.0', 4443))
 
 nickname = input("Enter Your Nickname(You Will Identified By This In The Room): ")
 
